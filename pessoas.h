@@ -82,6 +82,31 @@ typedef struct terceirizado
 }
 terceirizado;
 
-//TODO: Adicionar métodos
+//Métodos entrada via teclado;
+nomeCompleto geraNome();
+Pessoa geraPessoa();
+Endereco geraEndereco();
+Contato geraContato();
+paciente geraPaciente();
+char* geraIDPaciente();//ID é composto de 3 dígitos em ordem aleatória, sendo 2 números distintos e 1 letra;
+medico geraMedico();
+CRM geraCRM();
+enfermeiro geraEnfermeiro();
+COREN geraCOREN();
+terceirizado geraTerceirizado();
+
+//Métodos a partir da leitura de .txt
+nomeCompleto geraNomeArq(char* arquivo);
+Pessoa geraPessoaArq(char* arquivo);
+Endereco geraEnderecoArq(char* arquivo);
+Contato geraContatoArq(char* arquivo);
+paciente geraPacienteArq(char* arquivo);
+char* geraIDPacienteArq(char* arquivo);
+medico geraMedicoArq(char* arquivo);
+CRM geraCRMArq(char* arquivo);
+enfermeiro geraEnfermeiroArq(char* arquivo);
+COREN geraCORENArq(char* arquivo);
+terceirizado geraTerceirizadoArq(char* arquivo);
+
 
 #endif
